@@ -1,38 +1,515 @@
-.App {
-  text-align: center;
+body {
+  margin:0;
+  padding:0;
+  /*background-image: linear-gradient( 293.5deg,  rgba(181,149,208,1) 3.2%, rgba(251,148,207,1) 9.9%, rgba(181,149,208,1) 22.9%, rgba(251,148,207,1) 36.4%, rgba(181,149,208,1) 50.1%, rgba(251,148,207,1) 61.1%, rgba(181,149,208,1) 71.2%, rgba(251,148,207,1) 84.2%, rgba(181,149,208,1) 92.2% );
+  */
+  /*background-color: rgba(247,198,169,1);*/
+  /*background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(247,198,169,1) 24.5%,rgba(247,198,169,1) 66% );*/
+  /*background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgb(135, 175, 230) 24.5%,rgb(135, 175, 230) 66% );
+  */
+  /* background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgb(166, 201, 217) 0%, rgb(118, 164, 217) 15.9%, rgb(148, 216, 224) 15.9%, rgb(96, 193, 234) 24.4%, rgb(255, 255, 255) 24.5%,rgb(255, 255, 255) 66% ); */
+ 
+ background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
+ height:100vh; 
+}
+.header {
+  font-size:1.4rem;
+  font-family: 'Pacifico', cursive;
+  color:black;
+  margin-top: 0.5rem;
+}
+.header:hover {
+  transform: scale(1.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-bar {
+  margin-left:20rem;
+  margin-top: 1rem;
+  height:0.5rem; 
+}
+.links {
+  display:flex;
+  margin:0.5rem;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+  
+}
+.header {
+  text-decoration: none;
+  padding:0;
+  margin:0;
+  margin-top:1rem;
+  margin-bottom:0.5rem;
+}
+.bg-nav {
+/*background-color:#080808;
+/*background-image: linear-gradient(45deg, #4d4c49 0%, #fafafa 100%);*/
+/*background-color:rgb(235, 177, 123);*/
+background-color:white;
+padding:0.1rem;
+display:flex;
+justify-Content:space-evenly;
+     
+}
+.password {
+margin:0;
+padding:0;  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.mycart {
+  font-size:3rem;
+ margin-left:10rem;
+ text-decoration: underline;
+
+}
+
+.ships {
+  font-size:0.7rem;
+  color:white;
+  -webkit-animation: loop 20s infinite linear;
+  animation: loop 20s infinite linear;
+
+}
+.ships {color:white;}
+
+@keyframes loop {
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
+.points {
+  font-size:1.5rem;
+  border:0.2rem solid black;
+  background-color: white;
+  float:right;
+  height:4rem;
+  font-size:2rem;
+  margin-right:2rem;
+  padding:0.7rem;
+  padding-left:1.2rem;
+  padding-right:1.2rem;
+  border-radius: 30%;
+  bottom: 0;
+  right: 0;
+  position:fixed; 
+}
+.points:hover {
+  transform: scale(1.1); 
+}
+.btn {/*
+  border:0.2rem solid black;
+  color:black;
+  background-color:white;
+  font-size: 2rem;
+  padding:1rem;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  
+  */
+  margin-top:8.5rem;
+  margin-left:27%;
+  margin-right:25%;
+  color: #ededed;
+  font-family: Oswald;
+  font-size: 5em;
+  transition: 0.5s all ease;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-shadow: 
+    1px 1px #61b4de, 2px 2px #61b4de, 3px 3px #61b4de, 4px 4px #61b4de, 5px 5px #61b4de,
+    6px 6px #91c467, 7px 7px #91c467, 8px 8px #91c467, 9px 9px #91c467, 10px 10px #91c467,
+    11px 11px #f3a14b, 12px 12px #f3a14b, 13px 13px #f3a14b, 14px 14px #f3a14b, 15px 15px #f3a14b,
+    16px 16px #e84c50, 17px 17px #e84c50, 18px 18px #e84c50, 19px 19px #e84c50, 20px 20px #e84c50,
+    21px 21px #4e5965, 22px 22px #4e5965, 23px 23px #4e5965, 24px 24px #4e5965, 25px 25px #4e5965;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.all-users {
+ margin:1rem;
+ padding:0.5rem;
+ font-size:1.2rem;
+ text-decoration: underline;
+ 
+}
+.users-btn {
+  border:0.2rem solid black;
+  color:black;
+  font-size: 1.5rem;
+  padding:1rem; 
+  float:right;
+  font-size:2rem;
+  margin-right:5rem;
+  margin-left:0.2rem;
+ 
+
+}
+.users-btn:hover {
+  transform: scale(1.1); 
+}
+.all-prod {
+  margin-left:5rem; 
+}
+.view-btn {
+  float:right;
+  
+  margin-right:1rem;
+ 
+}
+.admin {
+  margin-left:5rem;
+  font-size:2rem;
+  font-weight:bold;
+  text-decoration: underline;
+  
+}
+.bg {
+  height:60rem;
+  width:90rem;
+ 
+
+}
+.link:hover {
+  font-weight:bold;
+}
+
+.listem {
+padding:0;
+margin-left:120px;
+margin-top:2rem;
+display: flex;
+align-items: flex-start;
+flex-wrap: wrap;
+height: 300px;
+}
+.list {
+padding:0;
+margin-right:2rem;
+
+display: flex;
+align-items: flex-start;
+flex-wrap: wrap;
+height: 300px;
+}
+.user {
+  font-size:1.5rem;
+  margin-left:28rem;
+  font-weight:bold;
+  text-decoration: underline;
+}
+
+.users {
+  padding:0;
+  margin-left:70px;
+  margin-top:2rem;
   display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 300px;
+}
+
+.img-pro {
+  height:14rem;
+  width:12rem;
+  margin-left:3rem;
+}
+.title-pro {
+  float:left;
+  font-size:1rem;
+  margin-left:0.5rem;
+}
+.info {
+  height:24rem;
+  width:38rem;
+  position: absolute;
+  right:240px;
+  bottom:70px;
+  padding:10px;
+    background-color: white;
+  border: 1px solid #999494;
+   border-radius: 10px;
+   box-shadow: 3px 3px 5px #999494;
+}
+
+.title {
+  font-size: 1.3rem;
+
+}
+.item{
+  margin-top:2rem;
+  height:15rem;
+  width:11rem;
+  
+ }
+.remove-btn {
+  border:0.1rem solid black;
+  font-size:1.6rem;
+  border-radius: 50%;
+  width:2rem;
+  color: white;
+  background-color:black;
+  height:2rem;
+  margin-top:0.8rem;
+  margin-right:0.5rem;
+
+}
+.amount {
+  font-weight:bold;
+  font-size:1.2rem;
+  height:2rem;
+  
+}
+.cart-price {
+height:2rem;
+margin-top:3rem;
+}
+.cart-title {
+margin-top:2.7rem;
+margin-bottom:0;
+padding:0;
+font-size:1.5rem;
+height:2rem;
+}
+.boxis {
+  display:flex;
+  width:50rem;
+  justify-content: center;
+  border:0.1rem solid black;
+  padding:0;
+  margin-left:3rem;
+  margin-top:1rem;
+  float:left;
+  background-color: white;
+  border: 1px solid #999494;
+   border-radius: 10px;
+   box-shadow: 3px 3px 5px #999494; 
+}
+ .show-img {
+  height:10rem;
+  width:8rem;
+  margin:1rem;
+  margin-left:5.3rem;
+  border:0.5rem solid white;
+  border-radius: 10px;
+  margin-top:1.5rem;
+ 
+ }
+ .show-image {
+  height:24rem;
+  width:18rem;
+  margin:1rem;
+  margin-left:5.6rem;
+  border:0.5rem solid white;
+  border-radius: 10px;
+  margin-top:3rem;
+  padding:10px;
+  background-color: white;
+  border: 1px solid #999494;
+   border-radius: 10px;
+   box-shadow: 3px 3px 5px #999494;
+ }
+ .cart-img {
+  height:17rem;
+  width:13rem;
+  margin:1rem;
+  margin-left:2rem;
+  border-radius: 10px;
+  margin-top:1rem;
+
+ }
+ .flex {
+  margin-left:1.5rem; 
+ }
+ .pricing {
+   font-size: 1.5rem;
+   margin-top:1rem;
+  
+ }
+ .rating {
+   float:left;
+   
+  font-size:1.2rem;
+  
+ }
+ .description {
+   margin-top:0.4rem;
+   float:left;
+ }
+ .btn-cart {
+  border:0.2rem solid black;
+  margin-top:0.7rem;
+  font-size: 1.5rem;
+  margin-bottom:23rem;
+  background-color:white;
+  color:black;
+  font-weight:bold;
+  border-radius: 12px;
+  padding:0.8rem;
+}
+.btn-cart:hover {
+ transform: scale(1.1);
+ background-color: rgba(254,122,152,0.81);
+ color:white;
+}
+.boxy {
+  display:flex;
+  height:22rem;
+  width:50rem;
+  justify-content: center;
+  border:0.1rem solid black;
+  padding:0;
+  padding-right:17rem;
+  margin-left:3rem;
+  margin-top:1rem;
+  float:left;
+  background-color: white;
+  margin-bottom:3rem;
+   border: 1px solid #999494;
+   border-radius: 10px;
+   box-shadow: 3px 3px 5px #999494;
+   
+}
+.box {
+  height:20rem;
+  width:21rem;
+  background-color: white;
+  margin-bottom:3rem;
+   border: 1px solid #999494;
+   box-shadow: 3px 3px 5px #999494;
+   margin:1rem;
+}
+
+.login {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top:3rem;
+  align-items:center;
+  border: 1px solid #999494;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #999494;
+  margin-left:30%;
+  margin-right:30%;
+  padding-bottom:7%;
+  padding-top:2%;
+  border-radius:2rem;
+  background-color: white;
+}
+.login-form {
+  display:flex;
+  flex-direction: column;
+  margin-top:0.5rem;
+}
+.no-access {
+  border:0.2rem solid black;
+  background-color:white;
+  text-align: center;
+  padding:1rem;
+  font-size:2rem;
+  font-weight:bold;
+  margin-left:25%;
+  margin-right:25%;
+  margin-top:5rem;
+}
+.title {
+text-align: center;
+font-size:2rem;
+text-decoration: underline;
+
+}
+.title-p {
+  font-size:1.7rem;
+  text-decoration: underline;
+
+}
+.account {
+  margin-left:30%;
+  margin-right:70%;
+  background-color: white;
+  border: 1px solid #999494;
+   border-radius: 10px;
+   box-shadow: 3px 3px 5px #999494;
+  padding:2rem;
+  background:white;
+  margin-top:2.5rem;
+  width:25rem;
+  padding-top:1.5rem;
+  
+}
+p {
+  font-size:1.2rem;
+  
+}
+.log-btn {
+font-weight:bold;
+font-size:1rem;
+padding:0.5rem;
+background:white;
+border:0.1rem solid black; 
+border-radius: 20px;;
+float:right;
+margin-right:5rem;
+margin-top:0;
+}
+h1 {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  letter-spacing: -1px;
+}
+.login-form > input {
+  min-width:380px;
+  padding:2px 0;
+  padding-left:15px;
+  margin-bottom: 5px;
+  outline:none;
+  border:0.2rem solid black;
+  font-size:1rem;
+}
+.login-form > button {
+  border:0.1rem solid black;
+  padding:0.4rem;
+  background-color: black;
+  color:white;
+  font-weight:bold;
+  margin-top:0.6rem;
+
+}
+.login-form > button:hover {
+  background-color:rgba(255,124,0,1);
+  color:white;
+  font-weight:bold;
+}
+h4 {
+  float:right;
+  margin-top:0.5rem;
+  margin-right:0.5rem;
+ 
+}
+h5 {
+  float:right;
+  margin-top:0.5rem;
+  margin-right:0.5rem;
+}
+
+.logout {
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.logout-btn {
+  min-width:300px;
+  padding:17px 30px;
+  margin-top:20px;
+  background-color: black;
+  color:white;
+  font-size:14px;
+  border-radius:3px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
